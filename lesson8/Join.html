@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Gallery</title>
+        <meta name="description" content="Weather.">
+        <link rel="shortcut icon" href="../lesson6/images/favicon.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/main-style.css">
+        <link rel="stylesheet" href="styles/custom-inputs.css">
+        <link rel="stylesheet" href="styles/medium.css"
+              media="(max-width: 1040px)">
+        <link rel="stylesheet" href="styles/small.css"
+              media="(max-width: 850px)">
+        <link rel="stylesheet" href="styles/tiny.css"
+              media="(max-width: 299px)">
+    </head>
+    <body>
+        <div class="shadow-blocker-1"></div>
+        <div class="shadow-blocker-2"></div>
+        
+        <nav>
+            <ul>
+                <li class="toggler hide">
+                    <a onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a class="  " href="#">Home</a></li>
+                <li><a class="  " href="../lesson6/preston-6.html">Preston</a></li>
+                <li><a class="  " href="#">Springs</a></li>
+                <li><a class="  " href="#">Fish</a></li>
+                <li><a class="at" href="../lesson8/Join.html">Join</a></li>
+                <li><a class="  " href="../lesson07/discover.html">discover</a></li>
+            </ul>
+        </nav>
+        <main class="form">
+            <!-- Notes: For the space to the right of the form maybe have a box that will show
+                details of the selected form entry or show some images -->
+            <h2>Customer Service </h2>
+            <form action="thanks.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>Full Name<span>*</span>
+                        <input name="name" pattern="^[a-zA-Z ]{5,}[a-zA-Z]$" type="text" required>
+                    </label>
+                    <label>Email
+                        <input name="email" type="email" placeholder="john@gmail.com">
+                    </label>
+                    <label>Phone Number<span>*</span>
+                        <input name="phone" type="tel" minlength="7" required>
+                    </label>
+                    <label>Postal Code<span>*</span>
+                        <input name="zip" type="number" min="2000" max="3000" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend></legend>
+                    <label>Storm Date
+                        <input name="storm-date" type="date">
+                    </label>
+                    <label>Storm Type
+                        <input list="weather-types" name="weather-types">
+                    </label>
+                    <datalist id="weather-types">
+                        <option value="snow">
+                        <option value="cold">
+                        <option value="fresh wind">
+                        <option value="Thunderstorm">
+                        <option value="hot">
+                    </datalist>
+                    <div class="split"><span>Storm Severity</span>
+                        <input type="range" id="severity" name="severity" min="1" max="10" step="1" value="1" oninput="adjustLabel(this)">
+                        <label for="severity">1</label>
+                    </div>
+                    <label>Storm Region
+                        <select name="region">
+                            <option value="" disabled selected>Select Region...</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda springs"> Springs</option>
+                            <option value="fish haven">Fish </option>
+                        </select>
+                    </label>
+                    <div>Do you need any assistance?
+                        <label class="container"><input type="radio" name="in-danger" value="yes"> Yes</label>
+                        <label class="container"><input type="radio" name="in-danger" value="maybe">No</label>
+                        <label class="container"><input type="radio" name="in-danger" value="no">Pehaps</label>
+                    </div>
+                    <label>Any Comments?
+                    <textarea name="additional-comments"></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+        <footer>
+            &copy;<span class="year">2022</span> John Munina 
+            <a target="_blank" href="https://byui.edu/online" rel="noopener">
+                BYUI-Idaho</a>
+            
+        </footer>
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

@@ -1,5 +1,5 @@
 :root {
-    --main-color: #2e8b57;
+    --main-color: #4a21df;
     --secondary-color: #add8e6;
     --accent-color: #90ee90;
     --default-light: #ffffff;
@@ -223,11 +223,11 @@ div.social-links .fa-flickr {
 }
 div.social-links .fa-google-plus-square:hover {
     cursor: pointer;
-    color: tomato;
+    color: rgb(71, 255, 102);
 }
 div.social-links .fa-facebook-square:hover {
     cursor: pointer;
-    color: royalblue;
+    color: rgb(110, 225, 65);
 }
 div.social-links .fa-flickr:hover {
     cursor: pointer;
@@ -505,7 +505,7 @@ form textarea {
     margin-top: 5px;
 }
 form input:required:not(:valid) {
-    box-shadow: inset 0 0 0 2px red, 0 0 0 7px transparent;
+    box-shadow: inset 0 0 0 2px rgb(240, 143, 33), 0 0 0 7px transparent;
     transition: box-shadow 0.3s;
 }
 form input:required:valid {
@@ -513,7 +513,7 @@ form input:required:valid {
     transition: box-shadow 0.3s;
 }
 form input:required:not(:valid):focus {
-    box-shadow: inset 0 0 0 2px red, 0 0 0 4px var(--main-color);
+    box-shadow: inset 0 0 0 2px rgb(120, 236, 42), 0 0 0 4px var(--main-color);
     transition: box-shadow 0.3s;
 }
 form input:required:valid:focus {
