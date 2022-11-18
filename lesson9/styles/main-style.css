@@ -1,5 +1,5 @@
 :root {
-    --main-color: #1058c4;
+    --main-color: #1e7b47;
     --secondary-color: #add8e6;
     --accent-color: #90ee90;
     --default-light: #ffffff;
@@ -261,15 +261,15 @@ div.social-links a:hover {
 }
 div.social-links a:hover .fa-google-plus-square {
     cursor: pointer;
-    color: rgb(216, 198, 194);
+    color: tomato;
 }
 div.social-links a:hover .fa-facebook-square {
     cursor: pointer;
-    color: rgb(87, 209, 199);
+    color: royalblue;
 }
 div.social-links a:hover .fa-flickr {
     cursor: pointer;
-    background: linear-gradient(90deg, rgb(115, 149, 250), deeppink);
+    background: linear-gradient(90deg, royalblue, deeppink);
     background-clip: padding-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -323,7 +323,7 @@ section.summary span.colored {
 }
 div .shout-out {
     display: block;
-    background-color: rgba(94, 205, 219, 0.8);
+    background-color: rgba(255,255,255,0.8);
     position: absolute;
     bottom: -80px; right: 0;
     font-size: 12px;
@@ -486,7 +486,7 @@ form label, form div {
     padding-bottom: 0.3rem;
 }
 form label span {
-    color: rgb(198, 241, 207);
+    color: red;
     font-size: large;
 }
 div label {
@@ -545,7 +545,7 @@ form textarea {
     margin-top: 5px;
 }
 form input:required:not(:valid) {
-    box-shadow: inset 0 0 0 2px rgb(0, 247, 255), 0 0 0 7px transparent;
+    box-shadow: inset 0 0 0 2px red, 0 0 0 7px transparent;
     transition: box-shadow 0.3s;
 }
 form input:required:valid {
@@ -553,7 +553,7 @@ form input:required:valid {
     transition: box-shadow 0.3s;
 }
 form input:required:not(:valid):focus {
-    box-shadow: inset 0 0 0 2px rgb(241, 185, 185), 0 0 0 4px var(--main-color);
+    box-shadow: inset 0 0 0 2px red, 0 0 0 4px var(--main-color);
     transition: box-shadow 0.3s;
 }
 form input:required:valid:focus {
