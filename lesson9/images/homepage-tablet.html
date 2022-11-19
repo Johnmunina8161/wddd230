@@ -7,8 +7,8 @@
         <style>
             body {
                 margin: 0 auto;
-                height: 615px;
-                width: 675px;
+                height: 675px;
+                width: 615px;
                 overflow: hidden;
             }
             a {
@@ -47,20 +47,24 @@
                 z-index: 3;
             }
             img#i2 {
-                justify-content: center;
-                height: 50%;
+                position: relative;
+                height: 45%;
                 z-index: 2;
             }
               
             div > div {
                 position: absolute;
-                width: calc(100% - 344px);
-                height: calc(100% - 118px);
+                width: calc(100% - 200px);
+                height: calc(100% - 200px);
                 border-radius: 5px;
                 overflow-y: scroll;
                 overflow-x: hidden;
                 z-index: 3;
+                margin-right: auto;
+                margin-left: auto;
             }
+          
+            
             @media screen and (min-width: 680px) {
                 div#d1 {
                     transform: scale(1);
