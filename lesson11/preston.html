@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <meta name="description" content="Homepage ">
+        <link rel="shortcut icon" href="./images/favicon.png">
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./styles/main-style.css">
+        <link rel="stylesheet" href="./styles/medium.css"
+              media="(max-width: 1040px)">
+        <link rel="stylesheet" href="./styles/small.css"
+              media="(max-width: 850px)">
+        <link rel="stylesheet" href="./styles/tiny.css"
+              media="(max-width: 377px)">
+    </head>
+    <body>
+        <div class="shadow-blocker-1"></div>
+        <div class="shadow-blocker-2"></div>
+        <div id="big-banner">
+            <i class="fa fa-bell"></i>
+            <span>Preston Pancakes </span>
+            <i onclick="closeBanner()" class="fa fa-close"></i>
+        </div>
+        <header>
+            <div>
+                <img src="./images/header-logo.gif" alt="header logo">
+                <h1>Weather </h1>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li class="toggler hide">
+                    <a onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a class="  " href="./">🏠 Home</a></li>
+                    <li><a class="at" href="./preston.html">🏴󠁵󠁳󠁩󠁤󠁿 Preston</a></li>
+                    <li><a class="  " href="./soda-springs.html">🥤 Springs</a></li>
+                    <li><a class="  " href="./fish-haven.html">🎣 Fish</a></li>
+                    <li><a class="  " href="./stormcenter.html">⛈️ Storm Center</a></li>
+                    <li><a class="  " href="./gallery.html">🖼️ Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Preston Idaho</h2>
+            <div class="hero">
+                <section class="summary">
+                    <h3>Weather Summary</h3>
+                    <span>Currently:</span>
+                    <span class="colored currently"><i class="fa fa-spinner fa-spin"></i></span>
+                    <span>High:</span>
+                    <span class="colored temperature"><i class="fa fa-spinner fa-spin"></i></span>
+                    <span>Wind Chill:</span>
+                    <span class="colored chill"><i class="fa fa-spinner fa-spin"></i></span>
+                    <span>Humidity:</span>
+                    <span class="colored humidity"><i class="fa fa-spinner fa-spin"></i></span>
+                    <span>Wind Speed:</span>
+                    <span class="colored wind-speed"><i class="fa fa-spinner fa-spin"></i></span>
+                </section>
+                <span class="shout-out">Photo by
+                    <a rel="noopener" target="_blank" href="https://unsplash.com/@sebastian_unrau?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sebastian Unrau</a> on
+                    <a rel="noopener" target="_blank" href="https://unsplash.com/s/photos/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+            </div>
+            <section class="forecast">
+                <h3>5 Day Forecast</h3>
+                <div class="five-day">
+                    <section>
+                        <h4 id="day1"><i class="fa fa-spinner fa-spin"></i></h4>
+                        <div class="weather-icon"></div>
+                        <span><i class="fa fa-spinner fa-spin"></i></span>
+                    </section>
+                    <section>
+                        <h4 id="day2"><i class="fa fa-spinner fa-spin"></i></h4>
+                        <div class="weather-icon"></div>
+                        <span><i class="fa fa-spinner fa-spin"></i></span>
+                    </section>
+                    <section>
+                        <h4 id="day3"><i class="fa fa-spinner fa-spin"></i></h4>
+                        <div class="weather-icon"></div>
+                        <span><i class="fa fa-spinner fa-spin"></i></span>
+                    </section>
+                    <section>
+                        <h4 id="day4"><i class="fa fa-spinner fa-spin"></i></h4>
+                        <div class="weather-icon"></div>
+                        <span><i class="fa fa-spinner fa-spin"></i></span>
+                    </section>
+                    <section>
+                        <h4 id="day5"><i class="fa fa-spinner fa-spin"></i></h4>
+                        <div class="weather-icon"></div>
+                        <span><i class="fa fa-spinner fa-spin"></i></span>
+                    </section>
+                </div>
+            </section>
+            <section class="events">
+                <h3>Preston Events</h3>
+                <i class="fa fa-spinner fa-spin"></i>
+                <i class="fa fa-spinner fa-spin"></i>
+                <i class="fa fa-spinner fa-spin"></i>
+            </section>
+            <section class="article">
+                <div class="img-holder">
+                    <img src="./images/preston-article.jpg" alt="pavilion">
+                    <span class="shout-out">Photo by
+                        <a rel="noopener" target="_blank" href="https://unsplash.com/@noahbuscher?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Noah Buscher</a></span>
+                </div>
+                <h3>A legacy for the future</h3>
+                <span class="author">By SLIM RANDLES</span>
+                <p>
+                    When old Joe Gilliam began digging that hole in his front yard, out there close to the street, neighbors watched and wondered. When he got his grandson to help him carry the shade tree sapling from his pickup to the hole, people nodded.
+                </p>
+                <p>
+                    Mystery solved. Old Joe’s planting a tree.
+                </p>
+                <p>
+                    After removing the root mass from the five-gallon pot, the grandson disappeared and Old Joe was left to care for the baby tree. He carefully spread the tiny feeder roots out and tucked them in with soil. Then he packed more dirt around the tree’s base and soaked it well with the hose.
+                </p>
+                <p>
+                    No one else saw anything odd in Joe planting that tree, either, but Joe’s been retired now going on 20 years. He’s old and getting more frail each year. By the time that sapling gets large enough to give homes to squirrels and birds and shade to neighbors and a resting place for dogs, Joe will have been long gone.
+                </p>
+                <p>
+                    But planting a tree is an affirmation of faith in the future. It is a gift to those yet unborn. It is a legacy of goodness, an old man’s prayer.
+                </p>
+                <span>Read article on <a href="https://www.hjnews.com/preston/a-legacy-for-the-future/article_a740aa00-c56e-5501-88f8-703cc3f919e5.html">HJNews</a>.</span>
+            </section>
+            <section class="contact-info">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47366.34469339145!2d-111.87517579490891!3d42.098977407066165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1602872714788!5m2!1sen!2sus"
+                    title="embedded map" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <h3>Contact Information</h3>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-location-arrow"></i>123 S<sup>th</sup>
+                        Somewhere St.<span id="brk1"></span>
+                        Preston, ID 83263</li>
+                    <li><i class="fa-li fa fa-phone"></i>(208) 123-4567</li>
+                    <li><i class="fa-li fa fa-envelope"></i>
+                        info@weather-or-not.org</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://currents.google.com/" target="_blank" rel="noopener">
+                       <i class="fa fa-google-plus-square"></i>Google Plus</a>
+                    <a href="https://facebook.com/" target="_blank" rel="noopener">
+                       <i class="fa fa-facebook-square"></i>Facebook</a>
+                    <a href="https://flickr.com/" target="_blank" rel="noopener">
+                       <i class="fa fa-flickr"></i>Flickr</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            &copy;<span class="year">2022</span> John Munina|
+            <span class="current-date"></span> |
+            <a href="#">Terms of Use</a>
+        </footer>
+        <div id="too-small">
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="./scripts/script.js"></script>
+        <script src="./scripts/windchill.js"></script>
+    </body>
+</html>

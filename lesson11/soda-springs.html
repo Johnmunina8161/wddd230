@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather </title>
+        <meta name="description" content="Homepage of Soda Springs Idaho.">
+        <link rel="shortcut icon" href="./images/favicon.png">
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./styles/main-style.css">
+        <link rel="stylesheet" href="./styles/medium.css"
+              media="(max-width: 1040px)">
+        <link rel="stylesheet" href="./styles/small.css"
+              media="(max-width: 850px)">
+        <link rel="stylesheet" href="./styles/tiny.css"
+              media="(max-width: 377px)">
+    </head>
+    <body>
+        <div class="shadow-blocker-1"></div>
+        <div class="shadow-blocker-2"></div>
+        <div id="big-banner">
+            <i class="fa fa-bell"></i>
+            <span>Preston Pancakes </span>
+            <i onclick="closeBanner()" class="fa fa-close"></i>
+        </div>
+        <header>
+            <div>
+                <img src="./images/header-logo.gif" alt="header logo">
+                <h1>Weather </h1>
+              
+        </header>
+        <nav>
+            <ul>
+                <li class="toggler hide">
+                    <a onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a class="  " href="./">🏠 Home</a></li>
+                    <li><a class="  " href="./preston.html">🏴󠁵󠁳󠁩󠁤󠁿 Preston</a></li>
+                    <li><a class="at" href="./soda-springs.html">🥤 Springs</a></li>
+                    <li><a class="  " href="./fish-haven.html">🎣Haven</a></li>
+                    <li><a class="  " href="./stormcenter.html">⛈️ Storm Center</a></li>
+                    <li><a class="  " href="./gallery.html">🖼️ Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Fish Haven Idaho</h2>
+            <div class="hero soda-springs">
+                <section class="summary">
+                    <h3>Weather Summary</h3>
+                    <span>Currently:</span>
+                    <span class="colored currently"><i class="fa fa-spinner fa-spin"></i></span>
+                    <span>High:</span>
+                    <span class="colored temperature"><i class="fa fa-spinner fa-spin"></i></span>
+                    <span>Wind Chill:</span>
+                    <span class="colored chill"><i class="fa fa-spinner fa-spin"></i></span>
+                    <span>Humidity:</span>
+                    <span class="colored humidity"><i class="fa fa-spinner fa-spin"></i></span>
+                    <span>Wind Speed:</span>
+                    <span class="colored wind-speed"><i class="fa fa-spinner fa-spin"></i></span>
+                </section>
+                <span class="shout-out">Photo by 
+                    <a rel="noopener" target="_blank" href="https://unsplash.com/@veroz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andy Mai</a> on 
+                    <a rel="noopener" target="_blank" href="https://unsplash.com/s/photos/water-spring?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+            </div>
+            <section class="forecast">
+                <h3>5 Day Forecast</h3>
+                <div class="five-day">
+                    <section>
+                        <h4 id="day1"><i class="fa fa-spinner fa-spin">Loading...</i></h4>
+                        <div class="weather-icon"></div>
+                        <span><i class="fa fa-spinner fa-spin"></i></span>
+                    </section>
+                    <section>
+                        <h4 id="day2"><i class="fa fa-spinner fa-spin">Loading...</i></h4>
+                        <div class="weather-icon"></div>
+                        <span><i class="fa fa-spinner fa-spin"></i></span>
+                    </section>
+                    <section>
+                        <h4 id="day3"><i class="fa fa-spinner fa-spin">Loading...</i></h4>
+                        <div class="weather-icon"></div>
+                        <span><i class="fa fa-spinner fa-spin"></i></span>
+                    </section>
+                    <section>
+                        <h4 id="day4"><i class="fa fa-spinner fa-spin">Loading...</i></h4>
+                        <div class="weather-icon"></div>
+                        <span><i class="fa fa-spinner fa-spin"></i></span>
+                    </section>
+                    <section>
+                        <h4 id="day5"><i class="fa fa-spinner fa-spin">Loading...</i></h4>
+                        <div class="weather-icon"></div>
+                        <span><i class="fa fa-spinner fa-spin"></i></span>
+                    </section>
+                </div>
+            </section>
+            <section class="events">
+                <h3>Soda Springs Events</h3>
+                <i class="fa fa-spinner fa-spin"></i>
+                <i class="fa fa-spinner fa-spin"></i>
+                <i class="fa fa-spinner fa-spin"></i>
+            </section>
+            <section class="article">
+                <div class="img-holder">
+                    <img src="./images/soda-springs-article.jpg" alt="man fishing in the sunset">
+                    <span class="shout-out">Photo by
+                        <a rel="noopener" target="_blank" href="https://www.kpvi.com/snowman/image_9f0793d2-2f68-11eb-b453-53c93721aa0c.html">Julian Paras</a></span>
+                </div>
+                <h3>Snowman Contest aims to raise awareness about child abuse</h3>
+                <span class="author">By JULIAN PARAS</span>
+                <p>
+                    The Bannock Youth Foundation wants to get the community involved by building snowmen this December!
+                </p>
+                <p>
+                    "We welcome anybody anywhere to just take this idea and help run with it," says Shannon Fox at the Bannock Youth Foundation.
+                </p>
+                <p>
+                    The Bannock Youth Foundation also wants to raise awareness on the topic of child abuse and trauma prevention through this event.
+                </p>
+                <p>
+                    "Not only is this event something we can't do alone but protecting children and preventing child abuse isn't something we can do alone either," says Fox. 
+                </p>
+                <p>
+                    For the month of December, the foundation is encouraging people to participate in their snowman building contest and sharing them on their Facebook page.
+                </p>
+                <p>
+                    Due to covid-19 precautions, they'd like people to participate virtually and share their creations whether it be made of snow or something as simple as a drawing.
+                </p>
+                <p>
+                    Shannon says the help of the community would be greatly appreciated.
+                </p>
+                <p>
+                    "It is going to take all of us and I hope we can kind of create that spirit here in this strange time for the Holidays."
+                </p>
+                <span>Read article on <a href="https://www.kpvi.com/news/local_news/snowman-contest-aims-to-raise-awareness-about-child-abuse/article_4d51aaf6-2f67-11eb-aae6-d7cdcbdb6f3f.html">KPVI</a>.</span>
+            </section>
+            <section class="contact-info">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47366.34469339145!2d-111.87517579490891!3d42.098977407066165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1602872714788!5m2!1sen!2sus"
+                    title="embedded map" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <h3>Contact Information</h3>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-location-arrow"></i>123 S<sup>th</sup>
+                        Somewhere St.<span id="brk1"></span>
+                        Preston, ID 83263</li>
+                    <li><i class="fa-li fa fa-phone"></i>(208) 123-4567</li>
+                    <li><i class="fa-li fa fa-envelope"></i>
+                        info@weather-or-not.org</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://currents.google.com/" target="_blank" rel='noopener'>
+                       <i class="fa fa-google-plus-square"></i>Google Plus</a>
+                    <a href="https://facebook.com/" target="_blank" rel='noopener'>
+                       <i class="fa fa-facebook-square"></i>Facebook</a>
+                    <a href="https://flickr.com/" target="_blank" rel='noopener'>
+                       <i class="fa fa-flickr"></i>Flickr</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            &copy;<span class="year">2020</span> Jacob Hornbeck |
+            <span class="current-date"></span> |
+            <a href="#">Terms of Use</a>
+        </footer>
+        <div id="too-small">
+            <h3>Your screen size is too small to view this page</h3>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="./scripts/script.js"></script>
+        <script src="./scripts/windchill.js"></script>
+    </body>
+</html>

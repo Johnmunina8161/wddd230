@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Weather</title>
+        <meta name="description" content="Weather gallerY">
+        <link rel="shortcut icon" href="./images/favicon.png">
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./styles/main-style.css">
+        <link rel="stylesheet" href="./styles/medium.css"
+              media="(max-width: 1040px)">
+        <link rel="stylesheet" href="./styles/small.css"
+              media="(max-width: 850px)">
+        <link rel="stylesheet" href="./styles/tiny.css"
+              media="(max-width: 377px)">
+    </head>
+    <body>
+        <div class="shadow-blocker-1"></div>
+        <div class="shadow-blocker-2"></div>
+        <div id="big-banner">
+            <i class="fa fa-bell"></i>
+            <span>Preston Pancakes </span>
+            <i onclick="closeBanner()" class="fa fa-close"></i>
+        </div>
+        <header>
+            <div>
+                <img src="./images/header-logo.gif" alt="header logo">
+                <h1>Weather </h1>
+                
+        </header>
+        <nav>
+            <ul>
+                <li class="toggler hide"><a onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a class="  " href="./">🏠 Home</a></li>
+                <li><a class="  " href="./preston.html">🏴󠁵󠁳󠁩󠁤󠁿 Preston</a></li>
+                <li><a class="  " href="./soda-springs.html">🥤 Springs</a></li>
+                <li><a class="  " href="./fish-haven.html">🎣 Fish Haven</a></li>
+                <li><a class="  " href="./stormcenter.html">⛈️ Storm Center</a></li>
+                <li><a class="at" href="./gallery.html">🖼️ Gallery</a></li>
+            </ul>
+        </nav>
+        <main class="gallery refs">
+            <h2>Weather Gallery References</h2>
+            <picture>
+                <img src="https://dummyimage.com/200x130/ddd/000&text=Placeholder"
+                     data-src="./images/clear-sky.jpg" alt="Placeholder">
+                <figcaption>By <a target="_blank" href="https://unsplash.com/@thanospal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thanos Pal</a></figcaption>
+            </picture>
+            <picture>
+                <img src="https://dummyimage.com/200x130/ddd/000&text=Placeholder"
+                     data-src="./images/a-little-wet.jpg" alt="Placeholder">
+                <figcaption>By <a target="_blank" href="https://unsplash.com/@insolitus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rowan Heuvel</a></figcaption>
+            </picture>
+            <picture>
+                <img src="https://dummyimage.com/200x130/ddd/000&text=Placeholder"
+                     data-src="./images/beautiful-evening-sky.jpg" alt="Placeholder">
+                <figcaption>By <a target="_blank" href="https://unsplash.com/@danramirez1998?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniel Ramírez</a></figcaption>
+            </picture>
+            <picture>
+                <img src="https://dummyimage.com/200x130/ddd/000&text=Placeholder"
+                     data-src="./images/clear-night-sky.jpg" alt="Placeholder">
+                <figcaption>By Julia</figcaption>
+            </picture>
+            <picture>
+                <img src="https://dummyimage.com/200x130/ddd/000&text=Placeholder"
+                     data-src="./images/dangerous-but-beautiful.jpg" alt="Placeholder">
+                <figcaption>By <a target="_blank" href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NASA</a></figcaption>
+            </picture>
+            <picture>
+                <img src="https://dummyimage.com/200x130/ddd/000&text=Placeholder"
+                     data-src="./images/just-a-little-cold.jpg" alt="Placeholder">
+                <figcaption>By John</figcaption>
+            </picture>
+            <picture>
+                <img src="https://dummyimage.com/200x130/ddd/000&text=Placeholder"
+                     data-src="./images/like-a-strike-of-lightning.jpg" alt="Placeholder">
+                <figcaption>By <a target="_blank" href="https://unsplash.com/@maxlarochelle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Max LaRochelle</a></figcaption>
+            </picture>
+            <picture>
+                <img src="https://dummyimage.com/200x130/ddd/000&text=Placeholder"
+                     data-src="./images/winter-tire-may-be-needed.jpg" alt="Placeholder">
+                <figcaption>By <a target="_blank" href="https://unsplash.com/@shishilya?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ilya Shishikhin</a></figcaption>
+            </picture>
+            <picture title="I had this picture on my computer for quite a while, and when I tried to find it, I can't confirm that it is from a specific source... there are many places that have it and many instances of it in Instagram">
+                <img src="https://dummyimage.com/200x130/ddd/000&text=Placeholder"
+                     data-src="./images/you-never-know-what-might-happen.jpg" alt="Placeholder">
+                <figcaption>By Damien</figcaption>
+            </picture>
+        </main>
+        <footer>
+            &copy;<span class="year">2022</span> John Munina |
+            <span class="current-date"></span> |
+            <a href="#">Terms of Use</a>
+        </footer>
+        <div id="too-small">
+            
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="./scripts/script.js"></script>
+        <script src="./scripts/gallery-script.js"></script>
+    </body>
+</html>
