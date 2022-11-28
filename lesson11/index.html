@@ -1,103 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather</title>
-        <meta name="description" content="Weather ">
-        <link rel="shortcut icon" href="./images/favicon.png">
-        <link rel="stylesheet" href="./styles/normalize.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./styles/main-style.css">
-        <link rel="stylesheet" href="./styles/medium.css"
-                media="(max-width: 1040px)">
-        <link rel="stylesheet" href="./styles/small.css"
-                media="(max-width: 850px)">
-        <link rel="stylesheet" href="./styles/tiny.css"
-                media="(max-width: 377px)">
-    </head>
-    <body>
-        <div class="shadow-blocker-1"></div>
-        <div class="shadow-blocker-2"></div>
-        <header>
-            <div>
-                <img src="./images/header-logo.gif" alt="header logo">
-                <h1>Weather</h1>
-            </div>
-        </header>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="description" content="Chamber of Commerce site for WDD230">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/visits.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <title>Johannesburg Chamber of Commerce industry</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text"><p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
+            <button type="button" class="banner-button"><img src="images/close_FILL0_wght400_GRAD0_opsz48.png" alt="Close Button"></button>
+        </div>
+    </div>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/logo.webp" alt="Chamber of Commerce Logo" ></a>
+        </div>
+        <a href="#" id="hamburger">&#9776;</a>
         <nav>
             <ul>
-                <li class="toggler hide">
-                    <a onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li><a class="at" href="./">🏠 Home</a></li>
-                <li><a class="  " href="./preston.html">🏴󠁵󠁳󠁩󠁤󠁿 Preston</a></li>
-                <li><a class="  " href="./soda-springs.html">🥤  Springs</a></li>
-                <li><a class="  " href="./fish-haven.html">🎣 Fish </a></li>
-                <li><a class="  " href="./stormcenter.html">⛈️ Storm Center</a></li>
-                <li><a class="  " href="./gallery.html">🖼️ Gallery</a></li>
+                <li><a href="/chamber/discover.html">Discover</a></li>
+                <li><a href="/chamber/directory.html">Directory</a></li>
+                <li><a href="/chamber/join.html">Join</a></li>
+                <li><a href="/chamber/contact.html">Contact</a></li>
             </ul>
         </nav>
-        <main>
-            <div class="hero homepage"></div>
-            <div id="towns"></div>
-            <section class="quick-links">
-                <h2>Weather </h2>
-                <span>has your back, for more than weather</span>
-                <section onclick="openPage(this)">
-                    <h3>🏠 Home</h3>
-                    <span>Our homepage with a little information</span>
-                </section>
-                <section onclick="openPage(this)">
-                    <h3>🏴󠁵󠁳󠁩󠁤󠁿 Preston</h3>
-                    <span>Events, weather, and more</span>
-                </section>
-                <section onclick="openPage(this)">
-                    <h3>🥤 Soda Springs</h3>
-                    <span>More than just the weather for the area</span>
-                </section>
-                <section onclick="openPage(this)">
-                    <h3>🎣 Fish Haven</h3>
-                    <span>Even find the best fishing spots</span>
-                </section>
-                <section onclick="openPage(this)">
-                    <h3>⛈️ Storm Center</h3>
-                    <span>Report storms to our Storm Center</span>
-                </section>
-                <section onclick="openPage(this)">
-                    <h3>🖼️ Gallery</h3>
-                    <span>See some awesome photos!</span>
-                </section>
-            </section>
-            <section class="contact-info">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47366.34469339145!2d-111.87517579490891!3d42.098977407066165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1602872714788!5m2!1sen!2sus"
-                    title="embedded map" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                <h3>Contact Information</h3>
-                <ul class="fa-ul">
-                    <li><i class="fa-li fa fa-location-arrow"></i>123 S<sup>th</sup>
-                        Somewhere St.<span id="brk1"></span>
-                        Preston, ID 83263</li>
-                    <li><i class="fa-li fa fa-phone"></i>(208) 123-4567</li>
-                    <li><i class="fa-li fa fa-envelope"></i>
-                        info@weather-or-not.org</li>
-                </ul>
-                <div class="social-links">
-                    <a href="https://currents.google.com/" target="_blank" rel="noopener">
-                       <i class="fa fa-google-plus-square"></i>Google Plus</a>
-                    <a href="https://facebook.com/" target="_blank" rel="noopener">
-                       <i class="fa fa-facebook-square"></i>Facebook</a>
-                    <a href="https://flickr.com/" target="_blank" rel="noopener">
-                       <i class="fa fa-flickr"></i>Flickr</a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            &copy;<span class="year">2022</span> John Munina |
-            <span class="current-date"></span> |
-            <a href="#">Terms of Use</a>
-        </footer>
-        <div id="too-small">
+        <section class="socials">
+            <a href="#"><img src="images/facebook.webp" alt="Facebook Logo and Link to our Facebook"></a>
+            <a href="#"><img src="images/linkedin.webp" alt="LinkedIn Logo and Link to our LinkedIn"></a>
+            
+        </section>
         
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="scripts/script.js"></script>
-    </body>
+    </header>
+
+    <section class="date"></section>
+
+    <main class="home">
+        <h1>Johannesburg Chamber of Commerce</h1>
+        
+            <img src="images/discover/amazon.jpg" alt="Chamber of Commerce image" width="1600" height="1200">
+            
+            <!-- Discover button -->
+     </main>
+
+    <footer>
+        <section id="about">
+            <img src="images/amazon.jpg" alt="Chamber of commerce"  >
+            <div id="address">
+                <h3>Visit Us</h3>
+                <p>10 Pike Street</p>
+                <p>Seattle, WA 96101</p>
+                <a href="#">Directions</a> 
+            </div>
+            <div id="contact">
+                <h3>Contact Us</h3>
+                <p>infojoburg.co.za</p>
+                <p>Phone: 011 446 3800</p>
+            </div>
+        </section>
+        <section id="copyright">
+            <p>&copy; <span id="copyrightYear"></span> Johannesburg Chamber of Commerce | John Munina | WDD230</p>
+            <p>Last update: <span id="lastModified"></span></p>
+            <p><span id="lastVisited"></span></p>
+        </section>  
+    </footer>
+</body>
+
 </html>

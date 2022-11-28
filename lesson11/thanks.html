@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather </title>
-        <meta name="description" content="Thanks for reporting a storm!">
-        <link rel="shortcut icon" href="./images/favicon.png">
-        <link rel="stylesheet" href="./styles/normalize.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./styles/main-style.css">
-        <link rel="stylesheet" href="./styles/medium.css"
-              media="(max-width: 1040px)">
-        <link rel="stylesheet" href="./styles/small.css"
-              media="(max-width: 850px)">
-        <link rel="stylesheet" href="./styles/tiny.css"
-              media="(max-width: 377px)">
-    </head>
-    <body>
-        <div class="shadow-blocker-1"></div>
-        <div class="shadow-blocker-2"></div>
-        <header>
-            <div>
-                <img src="./images/header-logo.gif" alt="header logo">
-                <h1>Weather </h1>
-                
-            </div>
-        </header>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="description" content="Chamber of Commerce site for WDD230">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/visits.js"></script>
+    <title>Johannesburg Chamber of Commerce industry</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text"><p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
+            <button type="button" class="banner-button"><img src="images/close_FILL0_wght400_GRAD0_opsz48.png" alt="Close Button"></button>
+        </div>
+    </div>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/logo.webp" alt="Seattle Chamber of Commerce Logo"></a>
+        </div>
+        <a href="#" id="hamburger">&#9776;</a>
         <nav>
             <ul>
-                <li class="toggler hide">
-                    <a onclick="toggleMenu()">&#9776; Menu</a></li>
-                    <li><a class="  " href="./">🏠 Home</a></li>
-                    <li><a class="  " href="./preston.html">🏴󠁵󠁳󠁩󠁤󠁿 Preston</a></li>
-                    <li><a class="  " href="./soda-springs.html">🥤 Springs</a></li>
-                    <li><a class="  " href="./fish-haven.html">🎣 Fish </a></li>
-                    <li><a class="at" href="./stormcenter.html">⛈️ Storm Center</a></li>
-                    <li><a class="  " href="./gallery.html">🖼️ Gallery</a></li>
+                <li><a href="/chamber/discover.html">Discover</a></li>
+                <li><a href="/chamber/directory.html">Directory</a></li>
+                <li><a href="/chamber/join.html">Join</a></li>
+                <li><a href="/chamber/contact.html">Contact</a></li>
             </ul>
         </nav>
-        <main>
-            <section class="submitted">
-                <img src="./images/form-help.png" alt="form has been submitted">
-                <h2>Thanks!</h2>
-                <p> We've received your inbox ✉️
-                    Right now, we have a high volume of messages coming through. You will receive a response soon , thank you💜  </p>
-                </p>
-            </section>
-        </main>
-        <footer>
-            &copy;<span class="year">2022</span> John Munina |
-            <span class="current-date"></span> |
-            <a href="#">Terms of Use</a>
-        </footer>
-        <div id="too-small">
-       
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="scripts/script.js"></script>
-    </body>
+        <section class="socials">
+            <a href="#"><img src="images/facebook.webp" alt="Facebook Logo and Link to our Facebook"></a>
+            <a href="#"><img src="images/linkedin.webp" alt="LinkedIn Logo and Link to our LinkedIn"></a>
+        </section>
+        
+    </header>
+
+    <section class="date"></section>
+
+    <main class="thanks">
+        <h1>Thank you for your submission.</h1>
+        <h3>We will get back to you shortly!</h3>
+    </main>
+
+    <footer>
+        <section id="about">
+            <img src="images/logo.webp" alt="Chamber of Commerce Logo">
+            <div id="address">
+                <h3>Visit Us</h3>
+                <p>10 Pike Street</p>
+                <p>Seattle, WA 96101</p>
+                <a href="#">Directions</a> 
+            </div>
+            <div id="contact">
+                <h3>Contact Us</h3>
+                <p>infojoburg.co.za</p>
+                <p>Phone: 011 446 3800</p>
+            </div>
+        </section>
+        <section id="copyright">
+            <p>&copy; <span id="copyrightYear"></span> Johannesburg Chamber of Commerce | John Munina | WDD230</p>
+            <p>Last update: <span id="lastModified"></span></p>
+            <p><span id="lastVisited"></span></p>
+        </section>
+    </footer>
+</body>
+
 </html>
